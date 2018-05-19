@@ -14,11 +14,9 @@ class Warrior:
     def set_damage(self, warrior, damageValue):
         warrior.get_damage(damageValue)
 
-war1 = Warrior("warrior1")
-war2 = Warrior("warrior2")
+war1 = Warrior(input("Введите имя первого воина:"))
+war2 = Warrior(input("Введите имя второго воина:"))
 
-print(war1)
-print(war2)
 deathWarrior = None
 while deathWarrior == None:
     warriors = [war1, war2]
